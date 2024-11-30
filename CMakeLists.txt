@@ -4,7 +4,6 @@ project(justePrixCLI VERSION 1.0)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
-
 set(CMAKE_BUILD_TYPE Debug)
 
 set(SOURCES
@@ -19,8 +18,6 @@ set(HEADERS
 	inc/menu.hpp
 )
 
-include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/inc )
-#file(GLOB SOURCES "*.cpp")
-#file(GLOB HEADERS "*.hpp")
+include_directories(inc)
 
 add_executable(juste_prix ${SOURCES} ${HEADERS})
